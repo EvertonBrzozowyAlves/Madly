@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="br">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=0, shrink-to-fit=no"/>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="~/css/site.css"/>
+        @RenderSection("Styles", required: false)
+        <title>@ViewData["Title"]</title>
+    </head>
+    <body>
+        <header>
+            @await Html.PartialAsync("_MenuSuperior")
+        </header>
+        <main>
+            <div class="container">
+                <main role="main">
+                    @RenderBody()
+                </main>
+            </div>
+        </main>
+        @await Html.PartialAsync("_Footer")
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js"></script>
+        @RenderSection("Scripts", required: false)
+    </body>
+</html>

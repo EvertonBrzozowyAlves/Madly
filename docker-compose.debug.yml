@@ -1,0 +1,52 @@
+# Please refer https://aka.ms/HTTPSinContainer on how to setup an https developer certificate for your ASP .NET Core service.
+version: '3.4'
+
+services:
+  madlyui:
+    image: madlyui
+    build:
+      context: .
+      dockerfile: madly_UI/Dockerfile
+    ports:
+      - 5000
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:5000
+    volumes:
+      - ~/.vsdbg:/remote_debugger:rw
+  madlymodels:
+    image: madlymodels
+    build:
+      context: .
+      dockerfile: madly_models/Dockerfile
+    ports:
+      - 5002
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:5002
+    volumes:
+      - ~/.vsdbg:/remote_debugger:rw
+  madlydal:
+    image: madlydal
+    build:
+      context: .
+      dockerfile: madly_DAL/Dockerfile
+    ports:
+      - 5003
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:5003
+    volumes:
+      - ~/.vsdbg:/remote_debugger:rw
+  madlybll:
+    image: madlybll
+    build:
+      context: .
+      dockerfile: madly_BLL/Dockerfile
+    ports:
+      - 5004
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:5004
+    volumes:
+      - ~/.vsdbg:/remote_debugger:rw      

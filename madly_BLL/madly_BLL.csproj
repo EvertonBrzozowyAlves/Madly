@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\madly_DAL\madly_DAL.csproj" />
+      <ProjectReference Include="..\madly_models\madly_models.csproj" />
+    </ItemGroup>
+
+</Project>

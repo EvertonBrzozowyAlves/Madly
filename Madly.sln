@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "madly_DAL", "madly_DAL\madly_DAL.csproj", "{D34ED513-50DA-4ACF-AAD2-4B00BE48EC64}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "madly_models", "madly_models\madly_models.csproj", "{3025C2E0-A9F5-4CF7-AA33-C09E7D805DDC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "madly_BLL", "madly_BLL\madly_BLL.csproj", "{18E49650-ACCA-4702-8738-5B7C1720149F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "madly_UI", "madly_UI\madly_UI.csproj", "{49B4A733-510F-4720-BF33-3F6FEBC6517D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "madly_API", "madly_API\madly_API.csproj", "{3C228A49-E999-40E6-BF58-FB3B7819A640}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{65276565-D0FA-4017-85A7-4DD8E6259520}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D34ED513-50DA-4ACF-AAD2-4B00BE48EC64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D34ED513-50DA-4ACF-AAD2-4B00BE48EC64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D34ED513-50DA-4ACF-AAD2-4B00BE48EC64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D34ED513-50DA-4ACF-AAD2-4B00BE48EC64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3025C2E0-A9F5-4CF7-AA33-C09E7D805DDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3025C2E0-A9F5-4CF7-AA33-C09E7D805DDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3025C2E0-A9F5-4CF7-AA33-C09E7D805DDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3025C2E0-A9F5-4CF7-AA33-C09E7D805DDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18E49650-ACCA-4702-8738-5B7C1720149F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18E49650-ACCA-4702-8738-5B7C1720149F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18E49650-ACCA-4702-8738-5B7C1720149F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18E49650-ACCA-4702-8738-5B7C1720149F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49B4A733-510F-4720-BF33-3F6FEBC6517D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49B4A733-510F-4720-BF33-3F6FEBC6517D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49B4A733-510F-4720-BF33-3F6FEBC6517D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49B4A733-510F-4720-BF33-3F6FEBC6517D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C228A49-E999-40E6-BF58-FB3B7819A640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C228A49-E999-40E6-BF58-FB3B7819A640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C228A49-E999-40E6-BF58-FB3B7819A640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C228A49-E999-40E6-BF58-FB3B7819A640}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65276565-D0FA-4017-85A7-4DD8E6259520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65276565-D0FA-4017-85A7-4DD8E6259520}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65276565-D0FA-4017-85A7-4DD8E6259520}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65276565-D0FA-4017-85A7-4DD8E6259520}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {45F6C0C7-7ECB-47EA-B284-60951E195AEB}
+	EndGlobalSection
+EndGlobal

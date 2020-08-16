@@ -1,0 +1,20 @@
+@model IList<madly_models.User>
+@{
+    ViewData["Title"] = "Equipe";
+    @* Layout = "_Layout"; *@
+}
+@section Styles{
+    <link href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet">
+}
+<div class="text-center">
+    <h1 class="display-4">Equipe</h1>
+</div>
+<div>
+    <table id="usersDataTable">
+    </table>
+</div>
+@section Scripts{
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/js/Team/index.js"></script>
+}

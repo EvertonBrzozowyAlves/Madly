@@ -1,0 +1,43 @@
+# Please refer https://aka.ms/HTTPSinContainer on how to setup an https developer certificate for your ASP .NET Core service.
+version: '3.4'
+
+services:
+
+  madly_db:
+    container_name: madly_db
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    volumes: 
+      - D:/DB_backup/data:/var/opt/mssql/data
+      - D:/DB_backup/log:/var/opt/mssql/log
+      - D:/DB_backup/secrets:/var/opt/mssql/secrets
+    environment: 
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "123@mudar"
+      MSSQL_PID: Express
+    ports:
+      - "1433:1433"
+
+  madly_ui:
+    container_name: madly_ui
+    build: 
+      context: ./madly_UI/
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    depends_on:
+      - "madly_db"
+  
+  madly_api:
+    container_name: madly_api
+    build: 
+      context: ./madly_API/
+      dockerfile: Dockerfile
+    ports:
+      - "5001:80"
+      - "5002:443"
+    depends_on:
+      - "madly_db"
+
+
+
+
