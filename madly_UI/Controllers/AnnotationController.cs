@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using madly_models;
 using madly_BLL;
 using madly_UI.Models;
 using System.Diagnostics;
@@ -9,20 +8,16 @@ namespace madly_UI.Controllers
 {
     public class AnnotationController : Controller
     {
-        //config para injeção de dependência
         private readonly AnnotationBLL _annotation;
         private readonly ILogger<AnnotationController> _logger;
-
 
         public AnnotationController(AnnotationBLL annotation, ILogger<AnnotationController> logger)
         {
             _annotation = annotation;
             _logger = logger;
         }
-        //config para injeção de dependência
 
-
-        // GET
+        [HttpGet]
         public IActionResult Index(string userId)
         {
             var annotations = _annotation.GetAllByUserId(userId);

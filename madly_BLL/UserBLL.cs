@@ -1,11 +1,10 @@
 using System.Collections.Generic;
 using madly_DAL;
-using madly_models;
-using madly_models.Interfaces;
+using madly_models.Models;
 
 namespace madly_BLL
 {
-    public class UserBLL : IUser<User>
+    public class UserBLL 
     {
         private readonly UserDAL _dal;
 

@@ -1,12 +1,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using madly_DAL.DataSettings;
-using madly_models;
-using madly_models.Interfaces;
+using madly_models.Models;
 
 namespace madly_DAL
 {
-    public class UserDAL : IUser<User>
+    public class UserDAL
     {
         private MadlyContext _context;
 

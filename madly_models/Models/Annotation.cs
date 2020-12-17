@@ -1,9 +1,8 @@
 using madly_models.Enums;
 using System;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
-namespace madly_models
+namespace madly_models.Models
 {
     public class Annotation : Base
     {

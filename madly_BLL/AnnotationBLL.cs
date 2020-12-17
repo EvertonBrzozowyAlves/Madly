@@ -1,11 +1,10 @@
 using System.Collections.Generic;
 using madly_DAL;
-using madly_models;
-using madly_models.Interfaces;
+using madly_models.Models;
 
 namespace madly_BLL
 {
-    public class AnnotationBLL : IAnnotation<Annotation>
+    public class AnnotationBLL 
     {
         private readonly AnnotationDAL _dal;
 

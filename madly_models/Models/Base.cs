@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace madly_models
+namespace madly_models.Models
 {
     public abstract class Base
     {

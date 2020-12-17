@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using madly_models;
+using madly_models.Models;
 
 
 namespace madly_DAL.DataSettings
@@ -11,7 +11,7 @@ namespace madly_DAL.DataSettings
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) //Para cadastrar a string de conexão com o banco de dados
         {
-            optionsBuilder.UseSqlServer(ConnectionStrings.SqlServerDocker);
+            optionsBuilder.UseSqlServer(ConnectionStrings.SqlServer);
         }
     }
 }

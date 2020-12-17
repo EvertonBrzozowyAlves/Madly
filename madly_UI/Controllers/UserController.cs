@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using madly_models;
+using madly_models.Models;
 using madly_BLL;
 using Microsoft.Extensions.Logging;
 using madly_UI.Models;
